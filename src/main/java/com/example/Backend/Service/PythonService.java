@@ -45,7 +45,7 @@ public class PythonService {
                 // read next line
                 textSendFile = readerSend.readLine();
             }
-            Process process  = new ProcessBuilder("python",pathPyMl+pythonScript,textPromt,textSendFile).start();
+            Process process  = new ProcessBuilder("python",pathPyMl+pythonScript,pathVideo + textSendFile).start();
 
 
             reader.close();
