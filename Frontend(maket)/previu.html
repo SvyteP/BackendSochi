@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Generate</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Generate Image to prompt</h2>
+        <form>
+          
+          <div class="group">      
+            <input id="input-prompt" class="input-prompt" type="text" required>
+            <span class="bar"></span>
+            <label>Prompt</label>
+          </div> 
+          <div id="drop_file_zone" ondrop="upload_file(event)" ondragover="return false">
+            <div id="drag_upload_file">
+                <p>Drop file(s) here</p>
+                <p>or</p>
+                <p><input class="but-1" type="button" value="Select File(s)" onclick="file_explorer();" /></p>
+                <input type="file" id="selectfile" accept="video/*" />
+            </div>
+        </div>
+        <section>
+            <div>
+              <ul class="check-list" id="check-list">
+              </ul>
+            </div>
+          </section>
+          <button class="button-28" role="button">Отправить данные</button>
+        
+        <script src="code.js"></script>
+    </div>
+    
+    
+</body>
+</html>
